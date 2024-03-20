@@ -1,0 +1,74 @@
+/* Geral */
+
+.logo {
+      width: 70px;
+}
+
+.btnStyle {
+      background-color: #257CFD;
+      color: #fff;
+      margin-left: 60px;
+}
+
+.btnStyle:hover {
+      background-color: #fff;
+      color: #257CFD
+
+}
+
+.hidden {
+      display: none;
+}
+
+/* Cart */
+.cart-on {
+      right: 0px;
+      top: 0px;
+      transition: .5s;
+}
+
+.cart-off {
+      right: -360px;
+      top: 0px;
+      transition: .5s;
+}
+
+.colorCard {
+      background-color: #e4ebf185;
+      width: 280px;
+}
+
+.btn {
+      color: #257CFD;
+}
+
+.btn:hover {
+      color: #fff;
+      background-color: #257CFD;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 560px) {
+      .resp {
+            margin-left: 44px;
+      }
+
+      .resp2 {
+            margin-left: 84px;
+      }
+
+      .logo {
+            width: 20%;
+            padding-top: 13px;
+      }
+
+      .form-resp {
+            display: flex;
+            flex-direction: column;
+      }
+
+     
+      
+
+}

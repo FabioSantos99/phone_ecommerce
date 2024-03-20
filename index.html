@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+  <body class="bg-light-sutle
+  d-flex flex-column">
+
+    <section id="carrinho"
+     class="position-fixed bg-primary bg-gradient bottom-0 text-white d-flex flex-column justify-content-between z-2 cart-off" style="width: 310px;">
+  
+      <div id="cabecalho-carrinho" class="d-flex justify-content-between m-4">
+        <p>Meu carrinho</p>
+        <button id="fechar-carrinho" class="border border-0 text-white bg-transparent"><i class="bi bi-x-circle"></i></button>
+      </div>
+      <section id="produtos-carrinho" class="overflow-y-auto d-flex flex-column gap-2">
+        
+      </section>
+  
+      <p id="preco-total" class="text-center text-white rounded fs-3 text
+
+      ">$200</p>
+  
+      <button id="finalizar-compra" class="btn btn-light m-3" id="finalizar-compra">Finalizar Compra</button>
+  
+    </section>
+  
+    <header class="d-flex bg-primary bg-gradient p-2 justify-content-between position-sticky top-0 z-1">
+      <a href="/">
+  
+      <img class="rounded logo" src="./Img/phone_logo.png" alt="logo-loja" >
+  
+      </a>
+  
+      <div class="d-flex gap-3 align-items-end mx-2 py-3">
+  
+  
+      <button id="abrir-carrinho" class="btn btn-link fs-2 text text-white"><i class="bi bi-cart-plus-fill"></i></button>
+  
+      <a href="./pedidos.html">
+      <button class="btn btn-link fs-2 text text-white"><i class="bi bi-person"></i></button>
+      </a>
+
+      <p id="total-produtos" class="position-absolute bg-danger rounded text-white p-1" style="font-size: 11px; bottom: 50px; right: 90px;">0</p>
+      </div>
+    </header>
+  
+    <main class="d-flex flex-column items-center">
+     
+  
+      <section id="filtros" class=" p-2 d-flex resp">
+  
+        <div class="px-2">
+          <input 
+          id="todos" 
+          type="radio" 
+          name="filtro"
+          class="btn-check" 
+          checked />
+          <label for="todos" class=" fw-bold text-white p-2 rounded btn btn-secondary cursor-pointer">Todos</label>
+  
+        </div>
+        <div class="px-2">
+          <input id="apple" 
+          type="radio" 
+          name="filtro" 
+          class="btn-check" />
+          <label for="apple" class="fw-bold text-white p-2 rounded btn btn-secondary cursor-pointer">Iphone</label>
+  
+        </div>
+        <div class="px-2">
+          <input id="samsung"
+           type="radio"
+           name="filtro"
+           class="btn-check" />
+          <label for="samsung" class="fw-bold text-white p-2 rounded btn btn-secondary cursor-pointer">Samsung</label>
+        </div>
+
+        <div class="px-2">
+          <input id="motorola"
+           type="radio"
+           name="filtro"
+           class="btn-check" />
+          <label for="motorola" class="fw-bold  p-2 rounded btn btn-secondary cursor-pointer text-white">Motorola</label>
+        </div>
+      </section> 
+  
+
+   <section id="container-produto" class="d-flex flex-wrap resp2">
+    
+
+  </section>
+</main>
+     <script type="module" src="./main.js"></script>
+  
+</body>
+</html>
